@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JEAH L. LABASTIDA — Portfolio</title>
+  <meta name="description" content="Portfolio of Jeah Labastida, IT graduate and aspiring web developer." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papKJSkOlwFtYb1xJ5S0kZ+VYZz+O/5LKy0l3pRlFJ+QxgSL7m93vD6+1e6M2/BOq1iS5RQ4eA6qHGq6xY3qmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .card-shadow { box-shadow: 0 6px 18px rgba(2,6,23,0.25); }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+  <!-- NAV -->
+  <nav class="max-w-6xl mx-auto p-4 flex items-center justify-between">
+    <a href="#home" class="text-2xl font-semibold">JEAH<span class="text-indigo-400"> LABASTIDA</span></a>
+    <div class="space-x-4 hidden md:flex">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#resume" class="hover:underline">Resume</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+    <button id="menuBtn" class="md:hidden p-2">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="max-w-6xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Hi — I'm <span class="text-indigo-400">JEAH LABASTIDA</span></h1>
+      <p class="mt-4 text-lg text-gray-300 max-w-xl">An Information Technology graduate seeking a web developer position. Skilled in web development and eager to apply knowledge to create useful and effective solutions. A fast learner who values teamwork and communication.</p>
+      <div class="mt-6 flex gap-4">
+        <a href="mailto:Labastidajeah6@gmail.com" class="px-5 py-2 rounded-xl border border-gray-700">Get in touch</a>
+      </div>
+      <div class="mt-6 text-sm text-gray-400">Tiniwisan, Butuan City • +63 905 037 5837 • Labastidajeah6@gmail.com</div>
+    </div>
+
+    <div class="flex-1 flex justify-center">
+      <!-- Profile Picture -->
+      <div class="w-72 h-72 rounded-2xl card-shadow overflow-hidden">
+        <img src="assets/profile.jpg" alt="Jeah Labastida" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-16">
+    <!-- ABOUT -->
+    <section id="about" class="mt-10 bg-gray-800 p-8 rounded-2xl card-shadow">
+      <h2 class="text-2xl font-bold mb-3">About Me</h2>
+      <p class="text-gray-300">I am an IT graduate specializing in web development. I have hands-on experience as a Web Development Assistant during my internship, where I assisted in designing and updating company websites. I am passionate about building modern, user-friendly, and accessible solutions, and I aim to continuously grow as a technology professional.</p>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="mt-10 bg-gray-800 p-8 rounded-2xl card-shadow">
+      <h2 class="text-2xl font-bold mb-3">Resume</h2>
+      <ul class="text-gray-300 space-y-3">
+        <li><strong>Education:</strong> Bachelor of Science in Information Technology — Caraga State University (2024–2028)</li>
+        <li><strong>Experience:</strong> Intern – Web Development Assistant, ABC Tech Solutions (2023)</li>
+        <li><strong>Certifications:</strong> Web Development Bootcamp (2023), Cybersecurity Basics (2022), Graphic Design for Beginners (2021)</li>
+        <li><strong>Awards:</strong> Best in Web Design – IT Department Project Fair (2023)</li>
+      </ul>
+    </section>
+    
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="mt-10 bg-gray-800 p-8 rounded-2xl card-shadow">
+      <h2 class="text-2xl font-bold mb-3">Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-900 rounded-xl card-shadow">
+          <img src="assets/cert1.png" alt="Certification 1" class="rounded-lg border border-gray-700" />
+          <p class="mt-2 text-center text-gray-300 text-sm">Web Development Bootcamp (2023)</p>
+        </div>
+
+        <div class="p-4 bg-gray-900 rounded-xl card-shadow">
+          <img src="assets/cert2.png" alt="Certification 2" class="rounded-lg border border-gray-700" />
+          <p class="mt-2 text-center text-gray-300 text-sm">Cybersecurity Basics (2022)</p>
+        </div>
+
+        <div class="p-4 bg-gray-900 rounded-xl card-shadow">
+          <img src="assets/cert3.png" alt="Certification 3" class="rounded-lg border border-gray-700" />
+          <p class="mt-2 text-center text-gray-300 text-sm">Graphic Design for Beginners (2021)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-10 bg-gray-800 p-8 rounded-2xl card-shadow">
+      <h2 class="text-2xl font-bold mb-3">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="p-6 bg-gray-900 rounded-xl card-shadow">
+          <h3 class="text-xl font-semibold">To-Do List Web App</h3>
+          <p class="text-sm text-gray-400 mt-2">A simple interactive task manager built with HTML, TailwindCSS, and JavaScript. Features adding, completing, and deleting tasks.</p>
+          <div class="mt-4">
+            <img src="assets/todo-app.png" alt="Screenshot of To-Do List App" class="rounded-lg border border-gray-700" />
+          </div>
+        </article>
+
+        <article class="p-6 bg-gray-900 rounded-xl card-shadow">
+          <h3 class="text-xl font-semibold">Quote Generator</h3>
+          <p class="text-sm text-gray-400 mt-2">A fun project that displays random motivational quotes with a single click. Built using HTML, CSS, and JavaScript.</p>
+          <div class="mt-4">
+            <img src="assets/quote-generator.png.png" alt="Screenshot of Quote Generator" class="rounded-lg border border-gray-700" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-12 bg-gray-800 p-8 rounded-2xl card-shadow">
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <div class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-lg glass">Web Development</div>
+        <div class="p-4 rounded-lg glass">HTML, CSS, JavaScript</div>
+        <div class="p-4 rounded-lg glass">Database Management (Basic)</div>
+        <div class="p-4 rounded-lg glass">Problem Solving</div>
+        <div class="p-4 rounded-lg glass">Teamwork & Communication</div>
+        <div class="p-4 rounded-lg glass">Organizational Skills</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-12 p-8 rounded-2xl card-shadow bg-gradient-to-r from-gray-800 to-gray-700">
+      <h2 class="text-2xl font-bold">Get in Touch</h2>
+      <p class="text-gray-300 mt-2">I am excited to contribute to your company as a Web Developer. You may reach out for collaboration, opportunities, or inquiries.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form class="space-y-4" action="mailto:Labastidajeah6@gmail.com" method="post" enctype="text/plain">
+          <input class="w-full p-3 rounded bg-gray-900 border border-gray-700" type="text" name="name" placeholder="Your name" required />
+          <input class="w-full p-3 rounded bg-gray-900 border border-gray-700" type="email" name="email" placeholder="you@example.com" required />
+          <textarea class="w-full p-3 rounded bg-gray-900 border border-gray-700" name="message" rows="5" placeholder="Your message..."></textarea>
+          <div>
+            <button type="submit" class="px-4 py-2 rounded bg-indigo-500">Send message</button>
+          </div>
+        </form>
+
+        <div class="p-6 bg-gray-900 rounded-lg">
+          <h3 class="font-semibold">Contact Information</h3>
+          <p class="text-sm text-gray-400 mt-2">Phone: +63 905 037 5837</p>
+          <p class="text-sm text-gray-400 mt-1">Email: <a href="mailto:Labastidajeah6@gmail.com" class="text-indigo-400">Labastidajeah6@gmail.com</a></p>
+          <p class="text-sm text-gray-400 mt-1">Location: Tiniwisan, Butuan City</p>
+
+          <!-- Social Media Links -->
+          <div class="mt-4 flex gap-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/jeya.labz" target="_blank" class="flex items-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-800 rounded-lg text-white">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/legaspo.jai/" target="_blank" class="flex items-center gap-2 px-3 py-2 bg-pink-500 hover:bg-pink-700 rounded-lg text-white">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-12 text-center text-gray-500">© <span id="year"></span> JEAH L. LABASTIDA❤️</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
